@@ -1,2 +1,6 @@
 # Telco-Customer-Churn
-Telco-Customer-Churn
+app.py
+pipeline_xgb.pkl
+requirements.txt
+Telco-Customer-Churn.ipynb
+README.md
