@@ -1,4 +1,26 @@
 import streamlit as st
+import pickle
+
+st.title("Customer Churn Prediction")
+
+# DEBUGGING
+st.write("App started successfully")
+
+try:
+    st.write("Loading model...")
+
+    with open("pipeline_xgb.pkl", "rb") as file:
+        model = pickle.load(file)
+
+    st.success("Model loaded successfully!")
+
+except Exception as e:
+    st.error(f"Error: {e}")
+
+# YOUR OLD CODE CONTINUES BELOW
+
+
+import streamlit as st
 import pandas as pd
 import pickle
 
